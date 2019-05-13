@@ -5,7 +5,7 @@ import { increment, decrement } from '../actions';
 class Counter extends Component {
     incrementIfOdd = (props) => {
         if  (this.props.count % 2 !== 0 ) {
-            return this.props.count - 1
+            return this.props.decrement(this.props.count + 1)
         }
     };
 
